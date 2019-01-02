@@ -81,7 +81,7 @@
 //
 #define TEMP_0_PIN         79   // Thermistor 0
 #define TEMP_1_PIN         65   // THERM_2
-#define TEMP_BED_PIN       66   // THERM_3
+#define TEMP_BED_PIN       85   // Thermistor bed
 
 //
 // Heaters / Fans
