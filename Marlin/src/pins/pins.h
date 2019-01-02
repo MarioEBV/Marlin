@@ -424,6 +424,8 @@
   #include "pins_THE_BORG.h"          // STM32F7                                    env:STM32F7
 #elif MB(REMRAM_V1)
   #include "pins_REMRAM_V1.h"         // STM32F7                                    env:STM32F7xx
+#elif MB(N_F767ZI_RAMPS)			
+  #include "pins_N_F767ZI_RAMPS.h"    // STM32F7									env:STM32F7xx
 
 //
 // Espressif ESP32

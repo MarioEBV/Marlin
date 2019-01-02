@@ -246,6 +246,7 @@
 
 #define BOARD_THE_BORG         1860   // THE-BORG (Power outputs: Hotend0, Hotend1, Bed, Fan)
 #define BOARD_REMRAM_V1        1862   // RemRam v1
+#define BOARD_N_F767ZI_RAMPS   1865   // Nucleo F767ZI Ramps adaption
 
 //
 // Espressif ESP32 WiFi
