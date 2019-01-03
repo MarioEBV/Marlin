@@ -33,12 +33,12 @@
 // Limit Switches
 //
 #if DISABLED(SENSORLESS_HOMING)
-  #define X_MIN_PIN        58
-  #define X_MAX_PIN        59
-  #define Y_MIN_PIN        60
-  #define Y_MAX_PIN        61
-  #define Z_MIN_PIN        62
-  #define Z_MAX_PIN        63
+  #define X_MIN_PIN        19
+  #define X_MAX_PIN        18
+  #define Y_MIN_PIN        0
+  #define Y_MAX_PIN        17
+  #define Z_MIN_PIN        1
+  #define Z_MAX_PIN        2
 #else
   #define X_STOP_PIN       36
   #define Y_STOP_PIN       39
@@ -56,25 +56,25 @@
 //
 // Steppers
 //
-#define X_STEP_PIN         22
-#define X_DIR_PIN          35
-#define X_ENABLE_PIN       34
-#define X_CS_PIN           14
+#define X_STEP_PIN         20
+#define X_DIR_PIN          45
+#define X_ENABLE_PIN       47
+// #define X_CS_PIN           14
 
 #define Y_STEP_PIN         23
-#define Y_DIR_PIN          38
-#define Y_ENABLE_PIN       37
-#define Y_CS_PIN           15
+#define Y_DIR_PIN          52
+#define Y_ENABLE_PIN       54
+// #define Y_CS_PIN           15
 
-#define Z_STEP_PIN         24
-#define Z_DIR_PIN          41
-#define Z_ENABLE_PIN       40
-#define Z_CS_PIN           16
+#define Z_STEP_PIN         36
+#define Z_DIR_PIN          3
+#define Z_ENABLE_PIN       37
+//#define Z_CS_PIN           16
 
-#define E0_STEP_PIN        25
-#define E0_DIR_PIN         44
-#define E0_ENABLE_PIN      43
-#define E0_CS_PIN          10
+#define E0_STEP_PIN        35
+#define E0_DIR_PIN         40
+#define E0_ENABLE_PIN      5
+//#define E0_CS_PIN          10
 
 //
 // Temperature Sensors
@@ -115,11 +115,11 @@
 #define LCD_PINS_ENABLE    48   // LCD_EN
 #define LCD_PINS_D4        50   // LCD_D4
 #define LCD_PINS_D5        51   // LCD_D5
-#define LCD_PINS_D6        52   // LCD_D6
+//#define LCD_PINS_D6        52   // LCD_D6
 #define LCD_PINS_D7        53   // LCD_D7
-#define BTN_EN1            54   // BTN_EN1
+//#define BTN_EN1            54   // BTN_EN1
 #define BTN_EN2            55   // BTN_EN2
-#define BTN_ENC            47   // BTN_ENC
+//#define BTN_ENC            47   // BTN_ENC
 
 //
 // Timers
