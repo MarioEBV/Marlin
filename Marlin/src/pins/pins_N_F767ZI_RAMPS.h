@@ -80,21 +80,16 @@
 // Temperature Sensors
 //
 #define TEMP_0_PIN         79   // Thermistor 0
-#define TEMP_1_PIN         65   // THERM_2
-#define TEMP_BED_PIN       85   // Thermistor bed
+#define TEMP_1_PIN         78   // Thermistor 1
+#define TEMP_BED_PIN       85   // Thermistor 2
 
 //
 // Heaters / Fans
 //
-#define HEATER_0_PIN       33
-#define HEATER_BED_PIN     31
+#define HEATER_0_PIN       10
+#define HEATER_BED_PIN     8
 
-#ifndef FAN_PIN
-  #define FAN_PIN          30   // "FAN1"
-#endif
-#define FAN1_PIN           32   // "FAN2"
-
-#define ORIG_E0_AUTO_FAN_PIN 32   // Use this by NOT overriding E0_AUTO_FAN_PIN
+#define FAN_PIN            9  // FAN0
 
 //
 // Servos
@@ -102,7 +97,7 @@
 #define SERVO0_PIN         26   // PWM_EXT1
 #define SERVO1_PIN         27   // PWM_EXT2
 
-#define SDSS               57   // Onboard SD card reader
+#define SDSS               41   // Onboard SD card reader
 //#define SDSS              9   // LCD SD card reader
 #define LED_PIN            21   // STATUS_LED
 
