@@ -64,6 +64,8 @@ void host_action(const char * const pstr, const bool eol) {
 
 #if ENABLED(HOST_PROMPT_SUPPORT)
 
+  const char CONTINUE_STR[] PROGMEM = "Continue";
+
   #if HAS_RESUME_CONTINUE
     extern bool wait_for_user;
   #endif
@@ -126,7 +128,7 @@ void host_action(const char * const pstr, const bool eol) {
             host_action_prompt_button(PSTR("DisableRunout"));
           else {
             host_prompt_reason = PROMPT_FILAMENT_RUNOUT;
-            host_action_prompt_button(PSTR("Continue"));
+            host_action_prompt_button(CONTINUE_STR);
           }
           host_action_prompt_show();
         }
@@ -151,7 +153,8 @@ void host_action(const char * const pstr, const bool eol) {
       case PROMPT_PAUSE_RESUME:
         msg = PSTR("LCD_PAUSE_RESUME");
         #if ENABLED(ADVANCED_PAUSE_FEATURE)
-          queue.inject_P(PSTR("M24"));
+          extern const char M24_STR[];
+          queue.inject_P(M24_STR);
         #endif
         break;
       case PROMPT_INFO:
